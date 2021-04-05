@@ -16,11 +16,11 @@ class MainActivity : AppCompatActivity() {
         fun inputIsNotEmpty(): Boolean {
             var b = true
             if (edit_1.text.toString().trim().isEmpty()) {
-                edit_1.error = "не должен быть пустым"
+                edit_1.error = "IS not empty "
                 b = false
             }
             if (edit_2.text.toString().trim().isEmpty()){
-                edit_2.error = "не должен быть пустым"
+                edit_2.error = "IS not empty"
                 b = false
             }
             return b
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                 var input1 = edit_1.text.toString().trim().toBigDecimal()
                 var input2 = edit_2.text.toString().trim().toBigDecimal()
                 if (input2.compareTo(BigDecimal.ZERO) == 0) {
-                    edit_2.error = "Ошибка"
+                    edit_2.error = "ERROR"
                 } else {
                     textResult.text = input1.divide(input2, RoundingMode.HALF_UP).toString()
                 }
