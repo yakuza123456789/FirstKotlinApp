@@ -16,11 +16,11 @@ class MainActivity : AppCompatActivity() {
         fun inputIsNotEmpty(): Boolean {
             var b = true
             if (edit_1.text.toString().trim().isEmpty()) {
-                edit_1.error = "не должен быть пустым"
+                edit_1.error = "НЕ ПУСТОЙ "
                 b = false
             }
             if (edit_2.text.toString().trim().isEmpty()){
-                edit_2.error = "не должен быть пустым"
+                edit_2.error = "НЕ ПУСТОЙ"
                 b = false
             }
             return b
